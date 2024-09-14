@@ -1,0 +1,119 @@
+/* Estilos básicos */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 50px;
+    height: 100vh; /* Cada seção ocupa 100% da altura da tela */
+}
+
+#section1 { 
+    background-color: rgb(37, 36, 36);
+
+    text-align: right; }
+#section2 { 
+    background-color: white;
+    text-align: center; 
+    align-content: center;
+}
+#section3 { 
+    background-color: white;
+    text-align: right; }
+#section4 { 
+    background-color: white;
+    text-align: right; }
+
+/* Menu de navegação */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0000003b;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#navbar ul li a.active {
+    border-bottom: 2px solid yellow; /* Destaca a seção ativa */
+}
+
+#navbar ul li a:hover {
+    color: yellow;
+}
+
+img.card {
+    height: 100vh;
+    width: 60vw;
+}
+
+/* Estilo para o contêiner */
+.mini-card {
+    width: 30vh;  /* Largura fixa do quadrado */
+    height: 45vh; /* Altura fixa para o quadrado */
+    display: flex;
+    flex-direction: column; /* Organiza imagem e texto em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: space-between; /* Distribui espaço entre imagem e texto */
+    border: 1px solid #ccc; /* Borda ao redor do quadrado */
+    border-radius: 3%;
+    padding: 10px;
+    display: inline-block;
+    margin: 1%;
+}
+
+/* Estilo para a imagem */
+.mini-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Faz com que a imagem cubra o contêiner */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+}
+
+/* Estilo para o texto */
+.mini-card p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 65%; /* Posiciona o texto no meio verticalmente */
+    left: 35%; /* Posiciona o texto no meio horizontalmente */
+    height: 60%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2 ); /* Fundo semitransparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
