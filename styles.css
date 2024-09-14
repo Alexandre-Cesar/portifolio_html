@@ -1,10 +1,12 @@
 /* Estilos básicos */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans",Arial, sans-serif;
     scroll-behavior: smooth;
+    background-color: rgb(37, 36, 36);
+
 }
 
 section {
@@ -13,8 +15,6 @@ section {
 }
 
 #section1 { 
-    background-color: rgb(37, 36, 36);
-
     text-align: right; }
 #section2 { 
     background-color: white;
@@ -22,11 +22,12 @@ section {
     align-content: center;
 }
 #section3 { 
-    background-color: white;
-    text-align: right; }
-#section4 { 
-    background-color: white;
-    text-align: right; }
+    text-align: left;
+    display: flexbox;
+    color: white;
+    height: 80vh;
+
+}
 
 /* Menu de navegação */
 #navbar {
@@ -69,6 +70,8 @@ section {
 img.card {
     height: 100vh;
     width: 60vw;
+    padding: 1%;
+    border-radius: 30px;
 }
 
 /* Estilo para o contêiner */
@@ -116,4 +119,48 @@ img.card {
     background-color: rgba(0, 0, 0, 0.2 ); /* Fundo semitransparente */
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+
+div#cont{
+    background-color: #33333300;
+    height: 40%;
+    padding: 10px 30px;
+    width: 70%;
+
+}
+img.logo{
+    height: 30%;
+    width: 10%;
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(10deg) brightness(30%);
+}
+
+
+/* Estilos para o botão de WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed; /* O botão ficará fixo na tela */
+    width: 60px; /* Largura do ícone */
+    height: 60px; /* Altura do ícone */
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da lateral direita */
+    background-color: #25d366; /* Cor de fundo (opcional) */
+    border-radius: 50%; /* Faz com que o botão seja redondo */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Sombra para o ícone */
+    z-index: 100; /* Garante que o ícone fique por cima de outros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Transição suave ao interagir */
+}
+
+/* Efeito hover no botão */
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Aumenta o ícone ligeiramente ao passar o mouse */
+}
+
+/* Estilos para a imagem do ícone */
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
